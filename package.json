@@ -1,0 +1,20 @@
+{
+  "name": "easy-reports-2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --env-file=.env --watch src/index.js",
+    "start": "node --env-file=.env src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "easy-reports-2": "file:",
+    "express": "^4.21.0",
+    "pdfmake": "^0.2.12"
+  }
+}
