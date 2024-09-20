@@ -196,7 +196,7 @@ function generateDateSquares(dateArray, target) {
         let p = document.createElement('p');
         let input = document.createElement('input')
 
-        div.setAttribute('class', 'dateSquare bg-complementary border-all border-primary padding-small color-white txt-center');
+        div.setAttribute('class', 'dateSquare bg-complementary padding-small color-white txt-center');
         div.setAttribute('onclick', `selectDate(${index}, this)`)
         div.style.marginBottom = '5px';
 
