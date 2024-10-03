@@ -141,7 +141,7 @@ function setPeriod(period, month, year) {
         return `Del 1 al 15 de ${months[month]} del ${year}`
     }
 
-    return `Del 15 al ${getDaysInMonth(year, month)} de ${months[month]} del ${year}`
+    return `Del 16 al ${getDaysInMonth(year, month)} de ${months[month]} del ${year}`
 }
 
 function getWeekdaysInPeriod(year, month, period) {
