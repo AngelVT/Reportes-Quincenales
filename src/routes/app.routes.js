@@ -7,4 +7,6 @@ router.get('/main', appControl.goEditor);
 
 router.post('/PDF', appControl.getPDF);
 
+router.get('/test', appControl.testPDF)
+
 export default router;

@@ -2,6 +2,7 @@ import path from "path"
 import { __dirname } from "../paths.js";
 import { printerPDF } from "../lib/configPDF.js";
 import { generateReport } from "../models/report.js";
+import { generatePDF } from "../models/vacations.js";
 import { dataExample } from "../models/docUtils/utils.js";
 
 export const goEditor = (req, res) => {
@@ -28,6 +29,22 @@ export const getPDF = async (req, res) => {
 
         res.setHeader('Content-Type', 'application/pdf');
         pdfDoc.info.Title = "Reporte de Actividades";
+        pdfDoc.pipe(res);
+        pdfDoc.end();
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({msg: "Error on server"});
+    }
+}
+
+export const testPDF = async (req, res) => {
+    try {
+        const def = generatePDF();
+
+        const pdfDoc = await printerPDF.createPdfKitDocument(def);
+
+        res.setHeader('Content-Type', 'application/pdf');
+        pdfDoc.info.Title = "Test File";
         pdfDoc.pipe(res);
         pdfDoc.end();
     } catch (error) {
