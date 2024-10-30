@@ -7,7 +7,6 @@ export function generatePDF() {
         pageMargins: [ 40, 40, 40, 40 ],
         styles: docUtils.docStyles,
         pageOrientation: 'portrait',
-        watermark: { text: 'test watermark', angle: 70 },
         content: [
             {
                 columnGap: 5,
