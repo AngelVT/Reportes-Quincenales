@@ -26,7 +26,7 @@ export function generatePDF() {
                         width: '*',
                         stack: [
                             {
-                                image: path.join(__dirname, 'public', 'img', 'logo_tizayuca.PNG'),
+                                image: path.join(__dirname, 'public', 'img', 'logo_tizayuca.png'),
                                 alignment: 'right',
                                 width: 100,
                                 margin: [0, 0, 0, 0]

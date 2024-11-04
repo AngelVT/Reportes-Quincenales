@@ -11,13 +11,15 @@
 </head>
 <body class="bg-image bg-image-1">
     <main>
+        <div class="loader dis-flex flex-center bg-blur dis-none" id="loader">
+            <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
         <section class="page-full menu bg-blur dis-grid reportLayout">
             <form id="controls" class="h-100 w-100 padding-small dis-grid">
                 <select id="periods" class="input input-secondary input-interface border-secondary input-round">
                     <option value="1">Primer Quincena</option>
                     <option value="2">Segunda Quincena</option>
                 </select>
-
                 <div class="dis-flex">
                     <select id="months" class="input input-secondary input-interface border-secondary input-round-left w-50">
                         <option value="0">Enero</option>

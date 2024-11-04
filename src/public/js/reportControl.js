@@ -10,6 +10,8 @@ const form = document.getElementById('controls');
 const pdfPanel = document.querySelector('#panel');
 const pdfPanelClose = document.querySelector('#panel_close');
 
+const loader = document.getElementById('loader');
+
 var constYear = new Date().getFullYear();
 
 yearInput.value = constYear;
@@ -86,6 +88,8 @@ pdfPanelClose.addEventListener(
 );
 
 async function getPDF(body) {
+    loader.classList.remove('dis-none');
+
     const response = await fetch('/app/PDF', {
         method: 'POST',
         headers: {
@@ -108,6 +112,7 @@ async function getPDF(body) {
         alert(res.msg);
         console.error('Error generating PDF:', response.statusText);
     }
+    loader.classList.add('dis-none');
 }
 
 activityInput.addEventListener(

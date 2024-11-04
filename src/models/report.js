@@ -53,7 +53,7 @@ export function generateReport(data) {
                         ]
                     },
                     {
-                        image: path.join(__dirname, 'public', 'img', 'logo_tizayuca.PNG'),
+                        image: path.join(__dirname, 'public', 'img', 'logo_tizayuca.png'),
                         width: 100,
                         alignment: 'right',
                         margin: [0, 0, 0, 0]
