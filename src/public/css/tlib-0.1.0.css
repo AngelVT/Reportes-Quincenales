@@ -296,7 +296,7 @@ html {
 .template-3cols {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 1em;
+    grid-column-gap: 16px;
     grid-row-gap: 5px;
 }
 
@@ -305,6 +305,13 @@ html {
     grid-template-rows: auto;
     grid-column-gap: 0;
     grid-row-gap: 0;
+}
+
+.template-grid-main {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap:15px;
 }
 /*-------------------------------------------------------------------------*/
 
