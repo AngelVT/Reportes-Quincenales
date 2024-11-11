@@ -95,7 +95,7 @@ export function generatePDF() {
                     widths: ['*','*','*','*','*','*'],
                     body: [
                         [
-                            {text: "DATOS DEL EMPLEADO", style: 'headT', border: docUtils.borderless, colSpan: 6},
+                            {text: "PERIODO AL QUE CORRESPONDEN LAS VACACIONES", style: 'headT', border: docUtils.borderless, colSpan: 6},
                             {},
                             {},
                             {},

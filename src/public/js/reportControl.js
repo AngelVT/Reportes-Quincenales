@@ -90,7 +90,7 @@ pdfPanelClose.addEventListener(
 async function getPDF(body) {
     loader.classList.remove('dis-none');
 
-    const response = await fetch('/app/PDF', {
+    const response = await fetch('/app/activityReportPDF', {
         method: 'POST',
         headers: {
             "Content-Type": "application/json"

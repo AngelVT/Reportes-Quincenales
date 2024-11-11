@@ -11,12 +11,108 @@
 </head>
 <body class="bg-image bg-image-1">
     <main>
-        <div class="loader dis-flex flex-center bg-blur" id="loader">
+        <div class="loader dis-flex flex-center bg-blur dis-none" id="loader">
             <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </div>
-        <section class="page-full menu bg-blur dis-grid reportLayout">
+        <section class="page-full menu bg-blur padding-large">
             <a href="/app/main" class="back-arrow bi-arrow-left-circle-fill"></a>
-            <form id="" class="">
+            <form id="" class="dis-flex flex-wrap flex-evenly">
+
+                <label class="txt-uppercase txt-center txt-bold color-primary w-100 margin-vertical-large">Datos del Trabajador</label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Nombre: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="text" required>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Dirección a la que pertenece: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="text" required>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Cargo: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="text" required>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Numero de trabajador: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="number" required>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium dis-flex flex-between flex-center-v"><span class="w-30">Tipo de trabajador:</span> <br>
+                    <label class="w-30 color-complementary"><input type="radio" name="employeeType" value="0" required> Confianza</label>
+                    <label class="w-30 color-complementary"><input type="radio" name="employeeType" value="1"> Base</label>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Fecha de solicitud: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="date" required>
+                </label>
+
+                <label class="txt-uppercase txt-center txt-bold color-primary w-100 margin-vertical-large">PERIODO AL QUE CORRESPONDEN LAS VACACIONES
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Año: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="number" required>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium dis-flex flex-between flex-center-v"><span class="w-30">Periodo:</span> <br>
+                    <label class="w-30 color-complementary"><input type="radio" name="term" value="0" required> Primero</label>
+                    <label class="w-30 color-complementary"><input type="radio" name="term" value="1"> Segundo</label>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Numero de días del periodo: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="number" required>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Numero de días a disfrutar: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="number" required>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Días pendientes: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="number" required>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Fecha de inicio: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="date" required>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Fecha de termino: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="date" required>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Fecha de termino: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="date" required>
+                </label>
+
+                <label class="txt-uppercase txt-center txt-bold color-primary w-100 margin-vertical-large"> Autorización
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Jefe inmediato: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="text" required>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Cargo del jefe inmediato: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="text" required>
+                </label>
+
+                <label class="color-secondary w-30 margin-bottom-medium">
+                    Encargado de remplazo de funciones: <br>
+                    <input class="input input-complementary input-interface border-secondary input-round w-100" type="text">
+                </label>
+
+                <button class="btn btn-primary-bg w-30 padding-vertical-small" type="submit">Generar PDF</button>
+                <button class="btn btn-secondary w-30 padding-vertical-small" type="reset">Limpiar</button>
 
             </form>
         </section>

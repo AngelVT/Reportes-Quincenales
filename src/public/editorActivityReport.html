@@ -14,7 +14,7 @@
         <div class="loader dis-flex flex-center bg-blur dis-none" id="loader">
             <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
         </div>
-        <section class="page-full menu bg-blur dis-grid reportLayout padding-horizontal-medium">
+        <section class="page-full menu bg-blur dis-grid reportLayout padding-horizontal-large padding-vertical-medium">
             <a href="/app/main" class="back-arrow bi-arrow-left-circle-fill"></a>
             <form id="controls" class="h-100 w-100 padding-small dis-grid">
                 <select id="periods" class="input input-secondary input-interface border-secondary input-round">
@@ -48,13 +48,13 @@
                 <input class="input input-secondary input-interface border-secondary input-round" type="text" name="areaDirector" id="areaDirector" placeholder="Director de area" required>
                 <input class="input input-secondary input-interface border-secondary input-round" type="text" name="directorPosition" id="directorPosition" placeholder="Cargo de director de area" required>
 
-                <div class="color-secondary">Salto de pagina antes de firmas: <br>
-                    <label><input type="radio" name="signaturesBreak" value="0" required> No</label>
-                    <label><input type="radio" name="signaturesBreak" value="1"> Si</label>
+                <div class="color-secondary dis-flex flex-between flex-center-v"><span class="w-60">Salto de pagina antes de firmas:</span>  <br>
+                    <label class="w-20"><input type="radio" name="signaturesBreak" value="0" required> No</label>
+                    <label class="w-20"><input type="radio" name="signaturesBreak" value="1"> Si</label>
                 </div>
 
-                <button class="btn btn-primary-bg bi-calendar" id="btn_date" type="button"> Generar fechas</button>
-                <button class="btn btn-primary bi-printer" id="btn_pdf" type="submit"> Generar PDF</button>
+                <button class="btn btn-primary-bg bi-calendar padding-vertical-small" id="btn_date" type="button"> Generar fechas</button>
+                <button class="btn btn-primary bi-printer padding-vertical-small" id="btn_pdf" type="submit"> Generar PDF</button>
             </form>
             <div class="padding-small" id="dates">
                 
