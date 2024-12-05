@@ -3,7 +3,6 @@ import { __dirname } from "../paths.js";
 import { printerPDF } from "../lib/configPDF.js";
 import { generateReport } from "../models/report.js";
 import { generatePDF } from "../models/materialReq.js";
-import { dataExample } from "../models/docUtils/utils.js";
 
 export const goMainMenu = (req, res) => {
     try {

@@ -225,8 +225,6 @@ function selectDate(targetDate, square) {
     modifiedTarget = parseInt(targetDate);
     document.querySelector('#editor_textarea').value = activities[modifiedTarget] ? activities[modifiedTarget].join('\n') : '';
     document.querySelector('#editor_textarea').focus();
-    console.log(dates);
-    console.log(activities);
 }
 
 function generateDateActivities() {

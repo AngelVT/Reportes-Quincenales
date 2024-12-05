@@ -163,9 +163,9 @@ export function generatetableBody(data) {
     ]);
 
     tableBody.push([
-        {text: data.name, style: 'labelTC'},
-        {text: 'L.D. Estefhani Itzel Rodriguez Barrera', style: 'labelTC'},
-        {colSpan: 2,text: data.areaDirector, style: 'labelTC', },
+        {text: data.name, style: 'labelTC', margin: [0,25,0,5]},
+        {text: 'L.D. Estefhani Itzel Rodriguez Barrera', style: 'labelTC', margin: [0,25,0,5]},
+        {colSpan: 2,text: data.areaDirector, style: 'labelTC', margin: [0,25,0,5]},
         {}
     ]);
 

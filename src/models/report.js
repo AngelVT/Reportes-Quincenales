@@ -62,7 +62,7 @@ export function generateReport(data) {
             },
             {
                 table: {
-                    widths: [150, '*', 100, 100],
+                    widths: [120, '*', 100, 100],
                     body: docUtils.generatetableBody(data)
                 },
                 layout: docUtils.cellLayout
